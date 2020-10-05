@@ -1,0 +1,33 @@
+<div id="content">
+    <section id="section">
+        <div id="img1" class="col margin">
+            <!--Se enlaza la imagen con property binding-->
+            <img [src]="datosPag.img1" alt="">
+        </div>
+        <div id="img2" class="col margin">
+            <img [src]="datosPag.img2" alt="">
+        </div>
+        <div id="img3" class="col margin">
+            <img [src]="datosPag.img3" alt="">
+        </div>
+        <div id="img4" class="margin">
+            <img [src]="datosPag.img4" alt="">
+
+        </div>
+        <div class="texto margin">
+            <!--String Interpolation (para insertar datos)-->
+            <p>{{datosPag.infoPag}}</p>
+        </div>
+    </section>
+    <div id="chat">
+        <h1>¡Chatea con nosotros!</h1>
+        <div id="box">
+            <!--Two way binding-->
+            <div>{{chat.data}}</div>
+        </div>
+        <div id="send">
+             <!--Two way binding-->
+            <textarea [(ngModel)]="chat.data"></textarea>
+        </div>
+    </div>
+</div>

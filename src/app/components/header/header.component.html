@@ -1,0 +1,39 @@
+<div id="header">
+    <div id="titulo">
+        <h1>Forever 21</h1>
+    </div>
+    <div id="menu">
+        <nav>
+            <ul>
+                <li><a routerLink="/home">Home</a></li>
+                <li>Productos
+                    <ul id="prueba">
+                        <li><a routerLink="/chaquetas">Chaquetas</a></li>
+                        <li><a routerLink="/botas">Botas</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Contacto
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="busqueda">
+        <label for="text">¿Qué buscas?</label>
+        <input type="text" name="" id="">
+    </div>
+
+    <div id="login">
+        <div id="session">
+            <label for="login">Login</label>
+            <!--EVENTOS ANGULAR
+                keyup-> Interacción teclado
+                enter->Tecla
+            -->
+            <input type="text" (keyup.enter)="datoUser(nombre.value)" #nombre />
+        </div>
+    </div>
+</div>
+<div id="mensaje" *ngIf="mensaje">
+    <h1>{{datoUser(nombre.value)}}</h1>
+</div>

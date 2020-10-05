@@ -1,0 +1,37 @@
+#content{
+    background: rgba(0, 0, 0, 0.034);
+    margin-bottom: 100px;
+}
+#section-chaquetas{
+    /* display: flex; */
+    display: flex;
+    flex-flow: wrap;
+    padding: 10px;
+    justify-content: space-between;
+    justify-content: center;
+}
+#section-chaquetas > div{
+    /* background: yellowgreen; */
+    width: 20%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.chaquetas-img{
+    width: 100%;
+    height: auto;
+}
+#box-price{
+    width: 100%;
+    /* background: green; */
+    font-family: Century Gothic;
+    margin: 2px;
+}
+#box-price  .prices{
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.787);
+}
+#box-price .names{
+    font-size: 0.8em;
+}

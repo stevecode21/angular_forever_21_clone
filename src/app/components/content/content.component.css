@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#content{
+    background: rgba(0, 0, 0, 0.034);
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+section{
+    /* background: blue; */
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+
+}
+section div img{
+    width: 100%;
+    height: auto; 
+}
+section .margin{
+    margin: 25px;
+    
+}
+section #img1 {
+    width: 100%;
+}
+section #img2{
+    width: 30%;
+}
+section #img3{
+    width: 25%;
+}
+section #img4{
+    width: 30%;
+    /* background: green; */
+    /* display: flex; */
+}
+.col{
+    /* float: left; */
+}
+.texto{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+}
+.texto p{
+    font-family: Century Gothic;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+#chat{
+    background: rgba(0, 0, 0, 0.863);
+    position: fixed;
+    top: 87%;
+    right: 1%;
+    height: auto;
+    border-radius: 5px;
+    
+}
+#chat h1{
+    font-family: Century Gothic;
+    color: #fff;
+    font-size: 1em;
+    margin: 10px;
+}
+#chat #box{
+background: rgba(0, 0, 0, 0.589);
+width: 150px;
+height: auto;
+border-radius: 2px;
+
+margin: 14px;
+}
+
+#box div{
+    font-family: Century Gothic;
+    color: #fff;
+    /* overflow-y: scroll;
+    overflow-x: scroll; */
+}
+#chat #send{
+    /* background: yellowgreen; */
+    margin: 10px;
+}
+#send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#send textarea{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    color: #000;
+    background: rgba(255, 255, 255, 0.63);
+resize: none;
+}
+#send textarea:focus{
+    transition: 0.5s all ease-in;
+    background: #fff;
+}

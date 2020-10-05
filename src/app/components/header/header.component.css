@@ -1,0 +1,136 @@
+#header{
+    /* background: yellow; */
+    /* display: inline-block; */
+    /* margin: 2px;*/
+    background: rgba(0, 0, 0, 0.863);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+}
+nav ul{
+    margin: 2px;
+    /* padding: 12px; */
+}
+nav ul li{
+    /*Le quitamos los estilos a la lista*/
+    list-style: none;
+    /*Lo posicionamos hacia al lado derecho, ya que el float funciona a partir del elemento, en este caso a la izquierda del elemento*/
+    float: left;
+    margin: 2px;
+padding: 15px;
+    height: 20px;
+    /*
+    position: static; El ememento se quedará en una posición estática
+    position: fixed; -> El elemento se quedará en una parte de la pantalla siempre fija
+    position: relative; -> Le permitirá al elemento moverse dependiendo de su posición de origen
+    position: absolute; -> Se moverá con relación al par, al que lo está conteniendo, (con relación al elemento padre)
+    */
+    position: relative;
+    background-color: rgb(167, 163, 163);
+    font-family: Century Gothic;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+/*Busque un nav, que tenga un ul li, y que este contenga un ul li*/
+nav ul li ul li{
+    /*Genera un control de los elementos flotantes para evitar desbordamiento (limpio el float en ambos lados left y right)*/
+    clear: both;
+    display: none;
+
+    /* position: absolute; */
+}
+
+/*Busque un nav que tenga un ul que contenga un li y cuando se haga hover, despliegue un ul el cual contiene li*/
+nav ul li:hover ul > li{
+    margin: 0px;
+    right: 14%;
+    /*Se despliegan los elementos en bloque ya que están en linea, este permite ampliar el rango de ejecución del elemento y se podrá pasar no solo el mouse en el texto sino también en la caja o en el contenedor*/
+    display: block;
+    width: 100%;
+    
+    /*Controla el despliegue del sub menú (a partir del elemento par busque la linea base) y la pegue a la linea base en el caso del 100%*/
+    line-height: 100%;
+}
+#menu{
+    /* background: red; */
+    margin: 0;
+    padding: 0;
+}
+nav{
+    /* background: blue; */
+    margin: 0;
+    padding: 0;
+
+}
+#busqueda{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: red; */
+    width: 30%;
+}
+#busqueda input {
+    height: 30px;
+    width: 70%;
+    border: none;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.63);
+    font-family: Century Gothic;
+}
+#busqueda input:focus {
+    background: #fff;
+    transition: 0.5s all ease-in;
+}
+#busqueda label {
+    width: 30%;
+    color: #fff;
+    font-family: Century Gothic;
+}
+#titulo h1{
+    font-size: 2.5em;
+    color: #fff;
+    font-family: Century Gothic;
+}
+#session{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+#session input{
+    height: 30px;
+    width: 80%;
+    border: none;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.63);
+    text-align: center;
+    font-family: Century Gothic;
+}
+#session input:focus{
+    background: #fff;
+    transition: 0.5s all ease-in;
+}
+#session label{
+    font-family: Century Gothic;
+    color: #fff;
+    margin-right: 15px;
+}
+#mensaje{
+    background: rgba(0, 0, 0, 0.548);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-family: Century Gothic;
+    transition: 2s all ease-in;
+}
+#mensaje h1{
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    transition: 2s all ease;
+}
